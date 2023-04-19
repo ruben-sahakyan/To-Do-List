@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Maven+Pro:wght@400;500;700&family=Quicksand:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <section class="add-task">
+            <input type="text" class="add-task-text" maxlength="270" placeholder="add task">
+            <button type="submit" class="add-task-btn" title="Add task">Add</button>
+        </section>
+        <section class="settings">
+            <img src="images/sun.png" class="change-theme" title="Change theme" alt="theme">
+            <img src="images/settings.png" class="change-settings" title="show settings" alt="settings">
+        </section>
+    </header>
+    <main>
+        <section class="show-settings">
+            <section class="show-tasks-count">
+                <p class="all-tasks-count"></p>
+                <p class="done-tasks-count"></p>
+            </section>
+            <section class="control-panel">
+                <ul>
+                    <li><input type="text" placeholder="search" class="search-input"></li>
+                    <li><p>Show all tasks</p><button class="show-all-tasks" type="submit">show</button></li>
+                    <li><p>Show only done tasks</p><button class="show-done-tasks" type="submit">show</button></li>
+                    <li><p>Show only incomplete tasks</p><button class="show-no-done-tasks" type="submit">show</button></li>
+                    <li><p>Delete only done tasks</p><button class="delete-only-done-tasks" type="submit">delete</button></li>
+                    <li><p>Delete all tasks</p><button class="delete-all-tasks" type="submit">delete</button></li>
+                </ul>
+            </section>
+        </section>
+        <!-- <div class="task">
+            <div class="one-task">
+                <section class="task-text"><p></p></section>
+                <section class="task-btns">
+                    <img src="images/done.png" class="one-task-btn task-done-btn" alt="theme">
+                    <img src="images/change.png" class="one-task-btn task-change-btn" alt="theme">
+                    <img src="images/delete.png" class="one-task-btn task-delete-btn" alt="theme">
+                </section>
+            </div>
+            <section class="task-change">
+                <input type="text" class="add-change-text" placeholder="add-text">
+                <button type="submit" class="add-change-text-btn">Add Change</button>
+            </section>
+            <div class="one-task-date">
+                <p class="create-date">Create Date: 14.05.23 Time 16:35</p>
+                <p class="change-date">Change Date: 14.05.23 Time 16:35</p>
+                <p class="done-date">Done Date: 14.05.23 Time 16:35</p>
+            </div>
+        </div>    -->
+    </main>
+    <script src="task.js"></script>
+    <script src="settings.js"></script>
+    <script src="search.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
